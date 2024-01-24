@@ -1,0 +1,19 @@
+@function rem($px) {
+  @return ($px / 16) +rem;
+}
+
+@function calcsum($x, $y) {
+  @return ($x + $y) + px;
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function get-vw($px-vw, $base-vw: 1920px){
+  @return #{strip-unit($px-vw) * 100 / strip-unit($base-vw)}vw;
+}

@@ -1,0 +1,521 @@
+extends ../layout/base
+
+block variables
+
+    - var title='';
+    - var description='';
+    - var pageClass='main';
+
+block content
+    section.section.section--top.js-top-block
+        .top-block
+            .top-block__back.js-move-image
+            .container
+                .top-block__body
+                    .top-block__left
+                        .title.title--small Suite of digital transformation services
+                        h1.title.title--large
+                            | Going Above and Beyond for your Business!
+                    .top-img
+                        .top-img__image-wrap
+                            .wave
+                            .wave
+                            .wave
+                            .wave
+                            .top-img__image
+                                img(src='content/images/empty.gif' class="lazy" data-src="content/images/pics/top-img.jpg" width="579" height="684" alt="top-img")
+                .sales-logo
+                    img(src="content/images/icons/partner-logo.webp" width="175" height="70" alt="partner-logo")
+        button.next-section.container.scroll-btn(data-target=".section--who-we")
+            .next-section__img
+                img(src="content/images/icons/arrow-down.png" width="175" height="70" alt="arrow-down")
+    section.section.section--who-we
+        .container
+            .who-we
+                .who-we__left
+                    .who-image.js-inview
+                        .who-image__cirkle.blue
+                        .who-image__cirkle.purple
+                        .who-image__cirkle.gray
+                        .who-image__pic
+                            img(src="content/images/pics/who-we.jpg" width="579" height="684" alt="/who-we")
+                .who-we__right.js-inview
+                    h3.title.title--mini-purple
+                        .title-cirkles.title-cirkles--mini
+                            .title-cirkles__item.blue
+                            .title-cirkles__item.purple
+                            .title-cirkles__item.dark
+                        span Who We Are
+                    h2.title.title--section A fresh face on a seasoned team of Salesforce experts.
+                    .who-we__bottom
+                        .who-we__text
+                            | We have come together with a collective goal of providing best-in-class
+                            span(style="color: #1f0f58;font-weight: 500;")  Salesforce
+                            |  advisory and implementation services.
+                            span(style="color: #1f0f58;font-weight: 500;")  Cosimo
+                            |  cloud offers a fully tailored, end-to-end suite of digital transformation services. Cosimo cloud offers a fully tailored, end-to-end suite of digital transformation services.
+                        .who-we__text
+                            |  We believe in simple, efficient solution
+                            span(style="color: #9680d3;font-weight: 500;")  design
+                            |  and delivery that puts people at the center of the project. We are implementation experts with a passion for change management and user adoption.
+                            span(style="color: #1f0f58;font-weight: 500;")  Our mission
+                            |  is to bust the myth that digital transformation is complex and inaccessible.
+    section.section.section--our-goals.js-inview
+        .wave-container
+            .wave-container__svg
+                svg(width='1921', height='167', viewBox='0 0 1921 167', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path(d='M1 153C37.5 124 138 68.0001 262 68.0001C492 68.0001 521 170.998 632 164.498C707.5 160.076 739.5 102.667 804.5 99C902 93.5002 949 169.379 1045.5 165.5C1165.5 160.677 1198.5 1 1335.5 1C1463.5 1 1542 131.498 1674 122.498C1779.6 115.298 1845 82.9976 1920.5 4.49758', stroke='#9C96F6')
+            .wave-container__img
+                img(src="content/images/pics/waves.png" width="1920" height="400" alt="waves")
+        .container
+            .our-goals
+                .our-goals__top.js-inview
+                    h2.title.title--section Our Goals
+                .our-goals__list.js-inview
+                    .our-goals__item
+                        .title-cirkles.title-cirkles--big
+                            .title-cirkles__item.dark
+                            .title-cirkles__item.blue
+                            .title-cirkles__item.purple
+                        .our-goals__text To provide best-in-class Salesforce advisory and implementation services
+                    .our-goals__item
+                        .title-cirkles.title-cirkles--big
+                            .title-cirkles__item.dark
+                            .title-cirkles__item.blue
+                            .title-cirkles__item.purple
+                        .our-goals__text To develop long-term partnerships which allows us to continuously advise and quickly serve the evolving needs of our customers
+                    .our-goals__item
+                        .title-cirkles.title-cirkles--big
+                            .title-cirkles__item.dark
+                            .title-cirkles__item.blue
+                            .title-cirkles__item.purple
+                        .our-goals__text To bust the myth that digital transformation is complex and inaccessible
+    section.section.section--services
+        .container
+            .services-block
+                .services-block__top.js-inview
+                    h3.title.title--mini-white
+                        .title-cirkles.title-cirkles--mini
+                            .title-cirkles__item.blue
+                            .title-cirkles__item.purple
+                            .title-cirkles__item.white
+                        span Lorem Ipsum
+                    h2.title.title--section.white Our Services
+                .services-block__list.js-inview
+                    -
+                        var services = [
+                            {
+                                title: 'Advise & Plan',
+                                text: 'We develop Business Plans, Return-on-Investment analysis and Product road-maps with key performance objectives to measure success.  We grasp the bigger picture and long-term goal then break down the complexity of digital transformation into achievable blocks with an initial focus on short-term wins and early adoption',
+                                src: 'content/images/pics/service1.jpg'
+                            }, {
+                                title: 'Design & Deliver',
+                                text: 'We conduct detailed discovery workshops, observe your employees and customer behaviors and collaborate across the company to understand your current and future requirements\n' +
+                                        'We develop end-to-end process maps and user stories to  detail how each individual and team will use the solution',
+                                src: 'content/images/pics/service2.jpg'
+                            }, {
+                                title: 'Adoption & Change Management',
+                                text: 'Our dedication to the end-user sets cosimo cloud apart. Not just how we approach the design and build but how we introduce change into an organization Adopt cosimo clouds change management framework to engage early, empower users throughout and ensure users feel ownership of the solution. Get users excited for Go-Live!',
+                                src: 'content/images/pics/service3.jpg'
+                            }, {
+                                title: 'Managed Service',
+                                text: 'We conduct detailed discovery workshops, observe your employees and customer behaviors and collaborate across the company to understand your current and future requirements',
+                                src: 'content/images/pics/service4.jpg'
+                            },
+                        ]
+                    each service, index in services
+                        .services-item
+                            .services-item__body
+                                .services-item__left
+                                    .services-item__top
+                                        .title-cirkles.title-cirkles--big
+                                            .title-cirkles__item.dark
+                                            .title-cirkles__item.blue
+                                            .title-cirkles__item.purple
+                                        .services-item__title #{service.title}
+                                    .services-item__text #{service.text}
+                                .services-item__img-wrap
+                                    .wave
+                                    .wave
+                                    .services-item__img
+                                        img(src='content/images/empty.gif' class="lazy" data-src=service.src width="280" height="280" alt="service"+index)
+    section.section.section--process
+        .container
+            .process-block
+                .process-block__top.js-inview
+                    h2.title.title--section Our Process
+                .process-block__slider(data-slider='process-slider').js-inview
+                    .swiper-container
+                        .process-block__nav
+                            button.process-block__button.prev.js-prev
+                                img(src='content/images/icons/prev.png' width="20" height="20" alt="prev")
+                            button.process-block__button.next.js-next
+                                img(src='content/images/icons/next.png' width="20" height="20" alt="next")
+                        .swiper-wrapper
+                            -
+                                var process = [
+                                    {
+                                        numb: '01',
+                                        title: 'Discover',
+                                        src: 'content/images/icons/process/process-discover.svg',
+                                        text: 'Iterative build cycles including Show and Tell demonstrations for user feedback, engagement and change requests'
+                                    }, {
+                                        numb: '02',
+                                        title: 'Design',
+                                        src: 'content/images/icons/process/process-design.svg',
+                                        text: 'Iterative build cycles including Show and Tell demonstrations for user feedback, engagement and change requests'
+                                    }, {
+                                        numb: '03',
+                                        title: 'Interactive Build',
+                                        src: 'content/images/icons/process/process-iterative.svg',
+                                        text: 'Iterative build cycles including Show and Tell demonstrations for user feedback, engagement and change requests'
+                                    }, {
+                                        numb: '04',
+                                        title: 'QA & UAT',
+                                        src: 'content/images/icons/process/process-qa.svg',
+                                        text: 'Iterative build cycles including Show and Tell demonstrations for user feedback, engagement and change requests'
+                                    }, {
+                                        numb: '05',
+                                        title: 'Train Change',
+                                        src: 'content/images/icons/process/process-train.svg',
+                                        text: 'Iterative build cycles including Show and Tell demonstrations for user feedback, engagement and change requests'
+                                    }, {
+                                        numb: '06',
+                                        title: 'Go live',
+                                        src: 'content/images/icons/process/process-live.svg',
+                                        text: 'Iterative build cycles including Show and Tell demonstrations for user feedback, engagement and change requests'
+                                    }
+                                ]
+                            each processItem in process
+                                .swiper-slide
+                                    .process-item
+                                        .process-item__icon-wrap
+                                            .process-item__numb #{processItem.numb}
+                                            .process-item__back
+                                            .process-item__icon
+                                                img(src=processItem.src width="280" height="280" alt="service1")
+                                        .process-item__title #{processItem.title}
+                                        .process-item__text #{processItem.text}
+    section.section.section--solutions
+        .section__duga1
+            img(class="lazy" src="content/images/empty.gif" data-src="content/images/pics/duga.png" width="479" height="826" alt="duga")
+        .section__duga2
+            img(class="lazy" src="content/images/empty.gif" data-src="content/images/pics/duga2.png" width="345" height="434" alt="duga")
+        .container
+            .solutions-block
+                .solutions-block__top
+                    h2.title.title--section Salesforce Solutions
+                .solutions-block__body
+                    -
+                        var solutions = [
+                            {
+                                icon: 'content/images/icons/solutions/sol-sales.svg',
+                                iconHover: 'content/images/icons/solutions/sol-sales-hover.svg',
+                                name: 'Sales',
+                                width: '140',
+                                height: '92'
+                            }, {
+                                icon: 'content/images/icons/solutions/sol-service.svg',
+                                iconHover: 'content/images/icons/solutions/sol-service-hover.svg',
+                                name: 'Service',
+                                width: '100',
+                                height: '80'
+                            }, {
+                                icon: 'content/images/icons/solutions/sol-marketing.svg',
+                                iconHover: 'content/images/icons/solutions/sol-marketing-hover.svg',
+                                name: 'Marketing',
+                                width: '75',
+                                height: '75'
+                            }, {
+                                icon: 'content/images/icons/solutions/sol-commerce.svg',
+                                iconHover: 'content/images/icons/solutions/sol-commerce-hover.svg',
+                                name: 'Commerce',
+                                width: '80',
+                                height: '70'
+                            }, {
+                                icon: 'content/images/icons/solutions/sol-app.svg',
+                                iconHover: 'content/images/icons/solutions/sol-app-hover.svg',
+                                name: 'Apps',
+                                width: '80',
+                                height: '70'
+                            }, {
+                                icon: 'content/images/icons/solutions/sol-analytics.svg',
+                                iconHover: 'content/images/icons/solutions/sol-analytics-hover.svg',
+                                name: 'Analytics',
+                                width: '80',
+                                height: '80'
+                            }, {
+                                icon: 'content/images/icons/solutions/sol-integration.svg',
+                                iconHover: 'content/images/icons/solutions/sol-integration-hover.svg',
+                                name: 'Integration',
+                                width: '76',
+                                height: '76'
+                            }, {
+                                icon: 'content/images/icons/solutions/sol-exp.svg',
+                                iconHover: 'content/images/icons/solutions/sol-exp-hover.svg',
+                                name: 'Employee Experience',
+                                width: '66',
+                                height: '66'
+                            }, {
+                                icon: 'content/images/icons/solutions/sol-trail.svg',
+                                iconHover: 'content/images/icons/solutions/sol-trail-hover.svg',
+                                name: 'Trailblazzers & Reskilling',
+                                width: '80',
+                                height: '96'
+                            }, {
+                                icon: 'content/images/icons/solutions/sol-industries.svg',
+                                iconHover: 'content/images/icons/solutions/sol-industries-hover.svg',
+                                name: 'Industries',
+                                width: '68',
+                                height: '68'
+                            }, {
+                                icon: 'content/images/icons/solutions/sol-partners.svg',
+                                iconHover: 'content/images/icons/solutions/sol-partners-hover.svg',
+                                name: 'Partners',
+                                width: '70',
+                                height: '62'
+                            }, {
+                                icon: 'content/images/icons/solutions/sol-succes.svg',
+                                iconHover: 'content/images/icons/solutions/sol-succes-hover.svg',
+                                name: 'Success',
+                                width: '65',
+                                height: '75'
+                            }
+                        ]
+                    .solutions-center.js-inview
+                        .solutions-center__pic-block
+                            .solutions-center__pic
+                                img(src='content/images/icons/man.png' width="129" height="147" alt="man")
+                            .solutions-center__name Einstein AI
+                        each solution, index in solutions
+                            .solution-item
+                                .solution-item__icon
+                                    img(src=solution.icon width=solution.width height=solution.height alt="solution"+index)
+                                    img(src=solution.iconHover width=solution.width height=solution.height alt="solution"+index)
+                                .solution-item__name #{solution.name}
+    section.section.section--digital
+        .container
+            .digital-block
+                .digital-block__left
+                    h2.title.title--section
+                        | The Importance Of
+                        | Digital Transformation
+                    .digital-block__text
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta non risus a placerat.
+                        span(style="color: #1f0f58;font-weight: 500;")  Mauris diam
+                        |  dolor, faucibus et arcu et, dapibus tincidunt ipsum. Morbi fringilla vel quam in congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        span(style="color: #1f0f58;font-weight: 500;") Vivamus non
+                        | mattis nunc. In finibus in mi eu consectetur.
+                .digital-block__right
+                    .digital-block__chart-block
+                        .digital-block__chart-wrap
+                            .digital-block__chart-cirkle
+                                .single-chart.blue.js-inview.js-number-block
+                                    svg.circular-chart(viewBox='0 0 36 36')
+                                        path.circle-bg(d='M18 2.0845\
+                                        a 15.9155 15.9155 0 0 1 0 31.831\
+                                        a 15.9155 15.9155 0 0 1 0 -31.831')
+                                        path.circle(stroke-dasharray='88, 100', d='M18 2.0845\
+                                        a 15.9155 15.9155 0 0 1 0 31.831\
+                                        a 15.9155 15.9155 0 0 1 0 -31.831')
+                                        text.percentage(x='18', y='20.35')
+                                            tspan.js-number(data-target="88")
+                                            tspan %
+                        .digital-block__chart-name
+                            | of senior business leaders say digitalization is a priority
+                    .digital-block__chart-block
+                        .digital-block__chart-wrap
+                            .digital-block__chart-cirkle
+                                .single-chart.seren.js-inview.js-number-block
+                                    svg.circular-chart(viewBox='0 0 36 36')
+                                        path.circle-bg(d='M18 2.0845\
+                                            a 15.9155 15.9155 0 0 1 0 31.831\
+                                            a 15.9155 15.9155 0 0 1 0 -31.831')
+                                        path.circle(stroke-dasharray='79, 100', d='M18 2.0845\
+                                            a 15.9155 15.9155 0 0 1 0 31.831\
+                                            a 15.9155 15.9155 0 0 1 0 -31.831')
+                                        text.percentage(x='18', y='20.35')
+                                            tspan.js-number(data-target="79")
+                                            tspan %
+                        .digital-block__chart-name
+                            | of businesses are engaged in some form of digital initiative
+                    .digital-block__chart-block
+                        .digital-block__chart-wrap
+                            .digital-block__chart-cirkle
+                                .single-chart.purple.js-inview.js-number-block
+                                    svg.circular-chart(viewBox='0 0 36 36')
+                                        path.circle-bg(d='M18 2.0845\
+                                            a 15.9155 15.9155 0 0 1 0 31.831\
+                                            a 15.9155 15.9155 0 0 1 0 -31.831')
+                                        path.circle(stroke-dasharray='96, 100', d='M18 2.0845\
+                                            a 15.9155 15.9155 0 0 1 0 31.831\
+                                            a 15.9155 15.9155 0 0 1 0 -31.831')
+                                        text.percentage(x='18', y='20.35')
+                                            tspan.js-number(data-target="96")
+                                            tspan %
+                        .digital-block__chart-name
+                            | of organizations have brought digital initiatives to scale
+    section.section.section--testimonials
+        .container
+            .testimonials-block
+                .testimonials-block__top.js-inview
+                    h2.title.title--section
+                        | Testimonials
+                .testimonials-block__slider(data-slider='testimonials-slider').js-inview
+                    .swiper-container
+                        .testimonials-block__nav
+                            button.testimonials-block__button.prev.js-prev
+                                img(src='content/images/icons/prev.png' width="20" height="20" alt="prev")
+                            button.testimonials-block__button.next.js-next
+                                img(src='content/images/icons/next.png' width="20" height="20" alt="next")
+                        .swiper-wrapper
+                            .swiper-slide
+                                .review-item
+                                    .review-item__top
+                                        img(src='content/images/icons/kav.png' width="36" height="25" alt="kav")
+                                    .review-item__text.js-sentense.js-inview
+                                        | I was impressed by Andrew's very methodical and unwavering thesis to growing Tiny's shareholding in Buffer. They were very clear about their valuation mindset.
+                                    .review-user
+                                        .review-user__image
+                                            img(src='content/images/pics/man.jpg' width="36" height="25" alt="kav")
+                                        .review-user__name John Williams
+                                        .review-user__pos CEO General Electric
+                            .swiper-slide
+                                .review-item
+                                    .review-item__top
+                                        img(src='content/images/icons/kav.png' width="36" height="25" alt="kav")
+                                    .review-item__text.js-sentense
+                                        | I was impressed by Andrew's very methodical and unwavering thesis to growing Tiny's shareholding in Buffer
+                                    .review-user
+                                        .review-user__image
+                                            img(src='content/images/pics/man.jpg' width="36" height="25" alt="kav")
+                                        .review-user__name John Williams
+                                        .review-user__pos CEO General Electric
+                            .swiper-slide
+                                .review-item
+                                    .review-item__top
+                                        img(src='content/images/icons/kav.png' width="36" height="25" alt="kav")
+                                    .review-item__text.js-sentense
+                                        | I was impressed by Andrew's very methodical and unwavering thesis to growing Tiny's shareholding in Buffer. They were very clear about their valuation mindset.
+                                    .review-user
+                                        .review-user__image
+                                            img(src='content/images/pics/man.jpg' width="36" height="25" alt="kav")
+                                        .review-user__name John Williams
+                                        .review-user__pos CEO General Electric
+                            .swiper-slide
+                                .review-item
+                                    .review-item__top
+                                        img(src='content/images/icons/kav.png' width="36" height="25" alt="kav")
+                                    .review-item__text.js-sentense
+                                        | I was impressed by Andrew's very methodical and unwavering thesis to growing Tiny's shareholding in Buffer. They were very clear about their valuation mindset.
+                                    .review-user
+                                        .review-user__image
+                                            img(src='content/images/pics/man.jpg' width="36" height="25" alt="kav")
+                                        .review-user__name John Williams
+                                        .review-user__pos CEO General Electric
+                            .swiper-slide
+                                .review-item
+                                    .review-item__top
+                                        img(src='content/images/icons/kav.png' width="36" height="25" alt="kav")
+                                    .review-item__text.js-sentense
+                                        | I was impressed by Andrew's very methodical and unwavering thesis to growing Tiny's shareholding in Buffer
+                                    .review-user
+                                        .review-user__image
+                                            img(src='content/images/pics/man.jpg' width="36" height="25" alt="kav")
+                                        .review-user__name John Williams
+                                        .review-user__pos CEO General Electric
+                            .swiper-slide
+                                .review-item
+                                    .review-item__top
+                                        img(src='content/images/icons/kav.png' width="36" height="25" alt="kav")
+                                    .review-item__text.js-sentense
+                                        | I was impressed by Andrew's very methodical and unwavering thesis to growing Tiny's shareholding in Buffer. They were very clear about their valuation mindset.
+                                    .review-user
+                                        .review-user__image
+                                            img(src='content/images/pics/man.jpg' width="36" height="25" alt="kav")
+                                        .review-user__name John Williams
+                                        .review-user__pos CEO General Electric
+    section.section.section--values
+        .section__circ1
+            img(class="lazy" src="content/images/empty.gif" data-src="content/images/pics/bgval1.png" width="445" height="907" alt="duga")
+        .section__circ2
+            img(class="lazy" src="content/images/empty.gif" data-src="content/images/pics/bgval2.png" width="445" height="907" alt="duga")
+        .container.container--small
+            .values-block
+                .values-block__top.js-inview
+                    h2.title.title--section.white Our Values
+                .values-block__blocks
+                    .values-block__column.js-inview
+                        .values-item
+                            .values-item__arrow
+                                img(src='content/images/icons/prev.png' width="16" height="16" alt="arrow")
+                            .values-item__top.js-open-acc
+                                .values-item__icon
+                                    img(src='content/images/icons/value1.png' width="148" height="106" alt="value1")
+                                .values-item__name Authenticity & Teamwork
+                            .values-item__text.js-acc-block
+                                | We are here to deliver the technological infrastructure and business processes required to support and elevate your vision. Our goal is to streamline your processes using the best-in-class tools provided by the Salesforce ecosystem and integration capabilities.
+                        .values-item
+                            .values-item__arrow
+                                img(src='content/images/icons/prev.png' width="16" height="16" alt="arrow")
+                            .values-item__top.js-open-acc
+                                .values-item__icon
+                                    img(src='content/images/icons/value3.png' width="148" height="106" alt="value1")
+                                .values-item__name Efficiency
+                            .values-item__text.js-acc-block
+                                | We are here to deliver the technological infrastructure and business processes required to support and elevate your vision. Our goal is to streamline your processes using the best-in-class tools provided by the Salesforce ecosystem and integration capabilities.
+                    .values-block__column.js-inview
+                        .values-item
+                            .values-item__arrow
+                                img(src='content/images/icons/prev.png' width="16" height="16" alt="arrow")
+                            .values-item__top.js-open-acc
+                                .values-item__icon
+                                    img(src='content/images/icons/value2.png' width="148" height="106" alt="value1")
+                                .values-item__name Challenge & Innovate
+                            .values-item__text.js-acc-block
+                                | We are here to deliver the technological infrastructure and business processes required to support and elevate your vision. Our goal is to streamline your processes using the best-in-class tools provided by the Salesforce ecosystem and integration capabilities.
+                        .values-item
+                            .values-item__arrow
+                                img(src='content/images/icons/prev.png' width="16" height="16" alt="arrow")
+                            .values-item__top.js-open-acc
+                                .values-item__icon
+                                    img(src='content/images/icons/value4.png' width="148" height="106" alt="value1")
+                                .values-item__name People first
+                            .values-item__text.js-acc-block
+                                | We are here to deliver the technological infrastructure and business processes required to support and elevate your vision. Our goal is to streamline your processes using the best-in-class tools provided by the Salesforce ecosystem and integration capabilities.
+    section.section.section--touch
+        .container.container--small
+            .touch-block
+                .touch-block__top.js-inview
+                    h2.title.title--section Get In Touch
+                .touch-block__form.js-inview
+                    form.form#js-form
+                        .form__item
+                            input(name="name" placeholder="First Name" type="text")
+                        .form__item
+                            input(name="surname" placeholder="Last Name" type="text")
+                        .form__item
+                            input(name="phome" placeholder="Phone Number" type="phone")
+                        .form__item
+                            input(name="email" placeholder="Email" type="email")
+                        .form__item
+                            input(name="company" placeholder="Company Name" type="text")
+                        .form__item
+                            .custom-select.js-custom-select
+                                .select-box.js-select-box
+                                    .select-box__text Subject
+                                    .select-box__icon
+                                        img(src='content/images/icons/select-arr.png' width="16" height="16" alt="arrow")
+                                input.hidden-input(type='hidden', name='selected-option')
+                                .dropdown-content.dropdown-content
+                                    .dropdown-option(data-value='Option 1') Option 1
+                                    .dropdown-option(data-value='Option 2') Option 2
+                                    .dropdown-option(data-value='Option 3') Option 3
+                        .form__item.textarea
+                            textarea(name="message" placeholder="Message")
+                        .form__bottom
+                            button.gradient-button.scroll-btn(data-target=".section--touch")
+                                .gradient-button__text SEND MESSAGE
+                                .gradient-button__icon
+                                    img(src="content/images/icons/arrow-link.png" width="20" height="20")
+block script

@@ -1,0 +1,152 @@
+.header {
+	z-index: 100;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	padding: rem(14) 0;
+	transition: 0.3s ease;
+	transition-property: padding, background-color;
+
+	@media(min-width: 1024px) {
+		padding: rem(40) 0;
+	}
+
+	@media(min-width: 1440px) {
+		padding: rem(60) 0;
+	}
+
+	&.scroll {
+		background-color: #1f0f58;
+		padding: rem(10) 0;
+
+		@media(min-width: 1440px) {
+			padding: rem(20) 0;
+		}
+	}
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__menu {
+		display: none;
+		width: 100%;
+		justify-content: flex-end;
+
+		@media(min-width: 1024px) {
+			display: flex;
+			align-items: center;
+		}
+
+		.link {
+			margin: 0 rem(7) 0 0;
+			flex-shrink: 0;
+
+			@media(min-width: 1366px) {
+				margin: 0 rem(14) 0 0;
+			}
+
+			&:last-child {
+				margin: 0 0 0 rem(24);
+			}
+		}
+	}
+}
+
+.logo {
+	display: block;
+	transition: 0.3s ease;
+	transition-property: width, height;
+	flex-shrink: 0;
+
+	&--header {
+		width: rem(200);
+		height: rem(50);
+		margin: 0 rem(40) 0 0;
+
+		@media(min-width: 1366px) {
+			width: rem(255);
+			height: rem(60);
+		}
+
+		.scroll & {
+			width: rem(180);
+			height: rem(40);
+		}
+
+	}
+
+	&--footer {
+		width: rem(220);
+		height: rem(50);
+		margin: 0 rem(40) 0 0;
+
+		@media(max-width: 767px) {
+			margin: 0;
+		}
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.burger {
+	display: block;
+	width: 50px;
+	height: 50px;
+
+	@media(min-width: 1024px) {
+		display: none;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+.mobile-menu {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 110;
+	top: 0;
+	left: 0;
+	background: rgb(88,198,242);
+	background: linear-gradient(133deg, rgba(88,198,242,1) 22%, rgba(93,136,237,1) 48%, rgba(148,137,212,1) 100%);
+	transform: translateX(-100%);
+	transition: transform 0.3s ease;
+
+	&.open {
+		transform: translateX(0);
+	}
+
+	&__top {
+		display: flex;
+		justify-content: flex-end;
+		padding: 15px 15px;
+	}
+
+	&__close {
+		width: 50px;
+		height: 50px;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__list {
+		margin: 30px 0 0;
+		.link + .link {
+			margin: 20px 0 0;
+		}
+	}
+}

@@ -1,0 +1,164 @@
+.title {
+	margin: 0;
+
+	&--mini-purple {
+		font-size: rem(18);
+		color: #7069f0;
+		display: flex;
+		align-items: center;
+
+		.title-cirkles {
+			margin: 0 8px 0 0;
+		}
+	}
+
+	&--mini-white {
+		font-size: rem(18);
+		color: #fff;
+		display: flex;
+		align-items: center;
+
+		.title-cirkles {
+			margin: 0 8px 0 0;
+		}
+	}
+
+	&--small  {
+		color: #ffffff;
+		font-size: rem(18);
+		font-weight: 400;
+
+		@media(min-width: 560px) {
+			font-size: rem(20);
+		}
+	}
+
+	&--large {
+		color: #ffffff;
+		font-size: rem(32);
+		font-weight: bold;
+		line-height: 1;
+		text-transform: uppercase;
+		font-family: $thirdFont;
+
+		@media(min-width: 560px) {
+			font-size: rem(40);
+		}
+
+		@media(min-width: 768px) {
+			font-size: rem(50);
+		}
+
+		@media(min-width: 1024px) {
+			font-size: rem(60);
+		}
+
+		@media(min-width: 1280px) {
+			font-size: rem(60);
+		}
+
+		@media(min-width: 1440px) {
+			font-size: rem(65);
+		}
+
+		@media(min-width: 1650px) {
+			font-size: rem(70);
+		}
+	}
+
+	&--section {
+		font-size: rem(36);
+		line-height: 0.85;
+		font-weight: bold;
+		color: #1f0f58;
+		font-family: $thirdFont;
+
+		@media(min-width: 768px) {
+			font-size: rem(48);
+		}
+
+		@media(min-width: 1025px) {
+			font-size: rem(56);
+		}
+
+		@media(min-width: 1440px) {
+			font-size: rem(64);
+		}
+	}
+
+	&.white {
+		color: #ffffff;
+	}
+}
+
+.title-cirkles {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+
+	&__item {
+		width: rem(9);
+		height: rem(9);
+		border-radius: 100%;
+
+		&.blue {
+			background-color: #3bc9f5;
+			margin: 0 -3px 0 0;
+			position: relative;
+			z-index: 3;
+		}
+
+		&.purple {
+			background-color: #8773bd;
+			margin: 0 -3px 0 0;
+			position: relative;
+			z-index: 2;
+		}
+
+		&.white {
+			background-color: #fff;
+		}
+
+		&.dark {
+			background-color: #1f0f58;
+		}
+	}
+
+	&--mini {
+		.title-cirkles__item {
+			width: rem(9);
+			height: rem(9);
+
+			&.blue {
+				margin: 0 -3px 0 0;
+			}
+
+			&.purple {
+				margin: 0 -3px 0 0;
+			}
+
+		}
+	}
+
+	&--big {
+		.title-cirkles__item {
+			width: rem(12);
+			height: rem(12);
+
+			&.blue {
+				margin: 0 -4px 0 0;
+				z-index: 2;
+			}
+
+			&.purple {
+				margin: 0 -4px 0 0;
+				z-index: 1;
+			}
+
+			&.dark {
+				margin: 0 -4px 0 0;
+				z-index: 3;
+			}
+		}
+	}
+}

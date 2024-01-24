@@ -1,0 +1,258 @@
+.section {
+	&--top {
+		position: relative;
+		height: 100vh;
+		max-height: 720px;
+		min-height: 720px;
+		background-color: #1f0f58;
+		overflow: hidden;
+		margin: 0 0 rem(30);
+
+		@media(min-width: 1367px) {
+			margin: 0 0 rem(60);
+		}
+
+		@media(min-width: 1367px) {
+			margin: 0 0 rem(96);
+		}
+
+		@media(min-width: 560px) {
+		   max-height: initial;
+		   min-height: initial;
+		}
+	}
+
+	&--who-we {
+		overflow: hidden;
+	}
+
+	&--our-goals {
+		background-color: #fff;
+		margin: rem(137) 0 rem(30);
+		position: relative;
+
+		@media(min-width: 1025px) {
+			margin: rem(289) 0 rem(60);
+		}
+
+		@media(min-width: 1367px) {
+			margin: rem(289) 0 rem(95);
+		}
+	}
+
+	&--services {
+		padding: rem(30) 0;
+		background: rgb(88,198,242);
+		background: linear-gradient(133deg, rgba(88,198,242,1) 22%, rgba(93,136,237,1) 48%, rgba(148,137,212,1) 100%);
+
+		@media(min-width: 1025px) {
+			padding: rem(60) 0;
+		}
+
+		@media(min-width: 1367px) {
+			padding: rem(76) 0 rem(99);
+		}
+	}
+
+	&--process {
+		overflow: hidden;
+		padding: rem(40) 0;
+
+		@media(min-width: 1025px) {
+			padding: rem(60) 0;
+		}
+
+		@media(min-width: 1367px) {
+			padding: rem(96) 0;
+		}
+	}
+
+	&--solutions {
+		padding: rem(40) 0 0;
+		background-color: #ebfaff;
+		position: relative;
+		overflow: hidden;
+
+		.container {
+			position: relative;
+			z-index: 2;
+		}
+
+		@media(min-width: 1025px) {
+			padding: rem(60) 0 rem(48);
+		}
+
+		@media(min-width: 1367px) {
+			padding: rem(96) 0 rem(48);
+		}
+
+		.section__duga2 {
+			position: absolute;
+			bottom: rem(74);
+			left: 0;
+			width: rem(345);
+			height: rem(434);
+			z-index: 1;
+
+			@media(max-width: 1440px) {
+				width: rem(280);
+				height: rem(320);
+				bottom: rem(20);
+			}
+
+			@media(max-width: 1024px) {
+				width: rem(140);
+				height: rem(220);
+				bottom: rem(20);
+			}
+
+			@media(max-width: 640px) {
+				width: rem(80);
+				height: rem(160);
+				bottom: rem(-19);
+				left: rem(-46);
+				transform: rotate(45deg);
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.section__duga1 {
+			position: absolute;
+			top: -347px;
+			right: -38px;
+			z-index: 1;
+			transform: rotate(-34deg);
+			width: rem(479);
+			height: rem(826);
+			z-index: 1;
+
+			@media(max-width: 1440px) {
+				width: rem(360);
+				height: rem(720);
+			}
+
+			@media(max-width: 1024px) {
+				width: rem(220);
+				height: rem(400);
+				top: -180px;
+				right: -38px;
+			}
+
+			@media(max-width: 640px) {
+				top: -120px;
+				right: -38px;
+				width: rem(120);
+				height: rem(240);
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	&--digital {
+		padding: rem(30) 0;
+
+		@media(min-width: 1025px) {
+			padding: rem(60) 0;
+		}
+
+		@media(min-width: 1367px) {
+			padding: rem(96) 0 rem(182);
+		}
+	}
+
+	&--testimonials {
+		background-color: #f3f3f3;
+		padding: rem(30) 0;
+		overflow: hidden;
+
+		@media(min-width: 1025px) {
+			padding: rem(60) 0;
+		}
+
+		@media(min-width: 1367px) {
+			padding: rem(96) 0;
+		}
+	}
+
+	&--values {
+		background-color: #1f0f58;
+		padding: rem(30) 0;
+		overflow: hidden;
+		position: relative;
+
+		.container {
+			position: relative;
+			z-index: 2;
+		}
+
+		@media(min-width: 1025px) {
+			padding: rem(60) 0;
+		}
+
+		@media(min-width: 1367px) {
+			padding: rem(96) 0;
+		}
+
+		.section__circ1 {
+			position: absolute;
+			top: rem(-342);
+			left: 0;
+			width: get-vw(445);
+			height: get-vw(907);
+			z-index: 1;
+
+			@media(max-width: 1024px) {
+				width: rem(180);
+				height: rem(300);
+				top: -130px;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.section__circ2 {
+			position: absolute;
+			top: rem(167);
+			right: rem(-32);
+			width: get-vw(592);
+			height: get-vw(1130);
+			z-index: 1;
+
+			@media(max-width: 1024px) {
+				width: rem(300);
+				height: rem(500);
+				top: rem(60);
+				right: rem(-32);
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	&--touch {
+		padding: rem(30) 0;
+		overflow: hidden;
+
+		@media(min-width: 1025px) {
+			padding: rem(60) 0;
+		}
+
+		@media(min-width: 1367px) {
+			padding: rem(96) 0;
+		}
+	}
+}

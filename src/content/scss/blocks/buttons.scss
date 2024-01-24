@@ -1,0 +1,94 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	font-weight: 500;
+	position: relative;
+	transition: background-color 0.3s linear, color 0.3s linear, border-color 0.1s linear;
+	cursor: pointer;
+}
+
+.gradient-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: rem(15);
+	line-height: 1.1;
+	font-weight: 500;
+	color: #fff;
+	padding: rem(16) rem(16);
+	text-transform: uppercase;
+	position: relative;
+	cursor: pointer;
+	border-radius: 40px;
+	transition: background-position 0.3s ease;
+	overflow: hidden;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		background: linear-gradient(100deg, rgba(62,199,245,1) 0%, rgba(173,143,210,1) 100%);
+		transition: transform 0.3s ease;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		background: linear-gradient(100deg, rgba(173,143,210,1) 0%, rgba(62,199,245,1) 100%);
+		transition: transform 0.3s ease;
+		transform: translateX(-99%);
+	}
+
+	&:hover {
+		&::after {
+			transform: translateX(100%);
+		}
+
+		&::before {
+			transform: translateX(0);
+		}
+	}
+
+	&__text {
+		position: relative;
+		z-index: 2;
+	}
+
+	@media(min-width: 1200px) {
+		padding: rem(16) rem(22);
+	}
+
+	@media(min-width: 1366px) {
+		font-size: rem(18);
+		padding: rem(16) rem(28);
+	}
+
+	&__icon {
+		width: 12px;
+		height: 12px;
+		margin: 0 0 0 8px;
+		transition: opacity 0.2s ease;
+		position: relative;
+		z-index: 2;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&:hover {
+
+	}
+}

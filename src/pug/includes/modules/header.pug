@@ -1,0 +1,40 @@
+header.header.js-header
+    .container
+        .header__body
+            .logo.logo--header
+                img(src="content/images/icons/logo.svg" width="255" height="60")
+            button.burger.js-burger
+                img(src="content/images/icons/burger.svg" width="40" height="40")
+            nav.header__menu
+                a().link.link--gradient-back.scroll-btn(data-target=".section--who-we" data-text="ABOUT")
+                    | ABOUT
+                a(href="#").link.link--gradient-back
+                    | TESTIMONIALS
+                a().link.link--gradient-back.scroll-btn(data-target=".section--services")
+                    | SERVICES
+                a().link.link--gradient-back.scroll-btn(data-target=".section--solutions")
+                    | Solutions
+                a().link.link--gradient-back
+                    | OUR PROCESS
+                a().link.link--gradient-back.scroll-btn(data-target=".section--values")
+                    | VALUES
+                a().gradient-button.scroll-btn(data-target=".section--touch")
+                    .gradient-button__text CONTACT US
+                    .gradient-button__icon
+                        img(src="content/images/icons/arrow-link.png" width="20" height="20")
+.mobile-menu
+    .mobile-menu__top.js-close-menu
+        img(src="content/images/icons/close.svg" width="30" height="30")
+    .mobile-menu__list
+        a().link.link--mob-white.scroll-btn(data-target=".section--who-we")
+            .link__text ABOUT
+        a().link.link--mob-white
+            .link__text TESTIMONIALS
+        a(href="#").link.link--mob-white
+            .link__text USP'S
+        a().link.link--mob-white.scroll-btn(data-target=".section--services")
+            .link__text SERVICES
+        a().link.link--mob-white.scroll-btn(data-target=".section--solutions")
+            .link__text SOLUTIONS
+        a().link.link--mob-white
+            .link__text PROCESS

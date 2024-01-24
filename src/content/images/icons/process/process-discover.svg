@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 118">
+  <g id="Layer_1" data-name="Layer 1">
+    <circle cx="59" cy="59" r="55" fill="none" stroke="#1f0f58" stroke-miterlimit="10" stroke-width="8"/>
+    <line x1="114" y1="4" x2="4" y2="114" fill="none" stroke="#1f0f58" stroke-miterlimit="10" stroke-width="8"/>
+    <line x1="114" y1="114" x2="4" y2="4" fill="none" stroke="#1f0f58" stroke-miterlimit="10" stroke-width="8"/>
+  </g>
+</svg>

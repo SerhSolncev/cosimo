@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 128">
+  <g id="Layer_1" data-name="Layer 1">
+    <g>
+      <ellipse cx="94" cy="64" rx="25.71" ry="60" fill="none" stroke="#1f0f58" stroke-miterlimit="10" stroke-width="8"/>
+      <ellipse cx="139" cy="64" rx="19.29" ry="45" fill="none" stroke="#1f0f58" stroke-miterlimit="10" stroke-width="8"/>
+      <ellipse cx="49" cy="64" rx="19.29" ry="45" fill="none" stroke="#1f0f58" stroke-miterlimit="10" stroke-width="8"/>
+      <ellipse cx="16.86" cy="64" rx="12.86" ry="30" fill="none" stroke="#1f0f58" stroke-miterlimit="10" stroke-width="8"/>
+      <ellipse cx="171.14" cy="64" rx="12.86" ry="30" fill="none" stroke="#1f0f58" stroke-miterlimit="10" stroke-width="8"/>
+    </g>
+  </g>
+</svg>
